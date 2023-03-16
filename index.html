@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Weather3D</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script src="./app.js" type="module" defer></script>
+    </head>
+    <body>
+        <h1>Weather App</h1>
+        <h4>Get the current weather for any location.</h4>
+        <form class="weather-form">
+            <input class="city-input" type="text" name="city" id="city" />
+            <label for="unit-switch">Imperial Units</label>
+            <input
+                class="unit-switch"
+                type="checkbox"
+                name="unit-switch"
+                id="unit-switch"
+            />
+            <button type="submit">Submit</button>
+        </form>
+        <div class="error-display">
+            <p class="error-message"></p>
+        </div>
+        <div class="weather-display">
+            <p class="city-name">Example City</p>
+            <div class="icon-container">
+                <img src="https://picsum.photos/100" alt="placeholder" />
+            </div>
+            <div class="temp-display">
+                <span class="temp"></span>
+                <div class="degree">°</div>
+            </div>
+            <p class="condition"></p>
+            <p class="date"></p>
+            <div class="line"></div>
+            <div class="details-container">
+                <div class="wind-speed-container">
+                    <img src="./assets/images/wind.svg" alt="wind icon" />
+                    <p class="wind-speed"></p>
+                    <p class="stat">Wind</p>
+                </div>
+                <div class="humidity-container">
+                    <img
+                        src="./assets/images/humidity.svg"
+                        alt="humidity icon"
+                    />
+                    <p class="humidity"></p>
+                    <p class="stat">Humidity</p>
+                </div>
+                <div class="rain-container">
+                    <img src="./assets/images/rain.svg" alt="rain icon" />
+                    <p class="rain"></p>
+                    <p class="stat">Chance of rain</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

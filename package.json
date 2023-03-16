@@ -1,0 +1,9 @@
+{
+    "name": "weatherapp",
+    "version": "1.0.0",
+    "description": "A simple weather App",
+    "main": "app.js",
+    "scripts": {},
+    "author": "Mikayil Gacek",
+    "license": "none"
+}
