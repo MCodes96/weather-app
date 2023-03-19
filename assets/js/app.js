@@ -25,7 +25,7 @@ form.addEventListener('submit', async (event) => {
         return;
     }
 
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${inputValue}`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${inputValue}`;
 
     const data = await (await fetch(url)).json();
     console.log(data);
